@@ -1158,13 +1158,13 @@
         // chữ của thư bạn muốn gửi
         let indexTextContent = 0;
         let textLetterContent = document.querySelector('.contentLetter');
-        const textLetterP = "Chúc chị tuổi mới luôn vui vẻ, thêm xinh đẹp, thật hạnh phúc, yêu bản thân hơn, chúc chị luôn thành công trên con đường phía trước, không chùn bước trước khó khăn, phải thật mạnh mẽ. Chúc chị tuổi mới đầy ắp niềm vui, luôn giữ vững đam mê và nhiệt huyết với những gì bản thân đang theo đuổi. Mong rằng mỗi ngày trôi qua đều là một ngày đáng nhớ, đầy tiếng cười và yêu thương. Đặc biệt là luôn có những người thân ở bên cạnh chị ạ. Happy Birthday🎂";
+        const textLetterP = "Chúc chị tuổi mới luôn vui vẻ, thêm xinh đẹp, thật hạnh phúc, yêu bản thân hơn, chúc chị luôn thành công trên con đường phía trước, không chùn bước trước khó khăn, phải thật mạnh mẽ. Chúc chị tuổi mới đầy ắp niềm vui, luôn giữ vững đam mê và nhiệt huyết với những gì bản thân đang theo đuổi. Mong rằng mỗi ngày trôi qua đều là một ngày đáng nhớ, đầy tiếng cười và yêu thương. Đặc biệt là luôn có những người thân ở bên cạnh chị ạ. \nHappy Birthday🎂";
         let timoutTextLetterContent;
         function textCharLetterContent() {
             if (indexTextContent < textLetterP.length) {
                 textLetterContent.textContent += textLetterP[indexTextContent];
                 indexTextContent++;
-                setTimeout(indexTextContent, 50);
+                setTimeout(indexTextContent, 25);
             }
             else {
                 clearInterval(timoutTextLetterContent)
